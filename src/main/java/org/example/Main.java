@@ -1,8 +1,6 @@
 package org.example;
 
-import org.example.beginner.Circulo;
-
-import java.math.BigDecimal;
+import org.example.beginner.SimpleSum;
 import java.util.Scanner;
 
 public class Main {
@@ -10,8 +8,10 @@ public class Main {
 
         Scanner leitor = new Scanner(System.in);
 
-        BigDecimal raio = BigDecimal.valueOf(leitor.nextDouble());
+        int a = leitor.nextInt();
+        int b = leitor.nextInt();
+        String SOMA = new SimpleSum(a, b).calculateSum();
 
-        System.out.println(new Circulo(raio).calcularArea());
+        System.out.println(SOMA);
     }
 }
