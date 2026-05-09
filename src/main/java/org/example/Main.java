@@ -1,7 +1,8 @@
 package org.example;
 
-import org.example.beginner.ExtremelyBasic;
+import org.example.beginner.Circulo;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Main {
@@ -9,10 +10,8 @@ public class Main {
 
         Scanner leitor = new Scanner(System.in);
 
-        int a = leitor.nextInt();
-        int b = leitor.nextInt();
+        BigDecimal raio = BigDecimal.valueOf(leitor.nextDouble());
 
-        String x = new ExtremelyBasic(a, b).calcularSoma();
-        System.out.print(x);
+        System.out.println(new Circulo(raio).calcularArea());
     }
 }
