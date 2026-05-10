@@ -24,7 +24,7 @@ public class Circulo {
         BigDecimal raioQuadrado = Decimal.multiplicarPontoFlutuante(getRaio(), getRaio());
         BigDecimal area = Decimal.multiplicarPontoFlutuante(BigDecimal.valueOf(PI), raioQuadrado);
 
-        String areaFmt = Decimal.formatarCom(Decimal.QUATRO_CASAS, area.doubleValue());
+        String areaFmt = Decimal.formatarCom(Decimal.QUATRO_CASAS, area);
 
         return String.format("A=%s", areaFmt);
     }

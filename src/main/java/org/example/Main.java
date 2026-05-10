@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.beginner.SimpleSum;
+import org.example.beginner.AverageOne;
 import java.util.Scanner;
 
 public class Main {
@@ -8,10 +8,11 @@ public class Main {
 
         Scanner leitor = new Scanner(System.in);
 
-        int a = leitor.nextInt();
-        int b = leitor.nextInt();
-        String SOMA = new SimpleSum(a, b).calculateSum();
+        String a = leitor.next();
+        String b = leitor.next();
 
-        System.out.println(SOMA);
+        AverageOne averageOne = new AverageOne(a, b);
+
+        System.out.println(averageOne.calculateMedia());
     }
 }
